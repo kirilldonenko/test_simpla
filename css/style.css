@@ -33,7 +33,6 @@
   color: #fff;
 }
 .main-nav {
-
   position: relative;
 }
 .main-nav ul {
@@ -136,7 +135,7 @@
 #submenu-bike, #submenu-teen-bike {
   width: 230px;
   margin-top: 15px;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 .main-nav__list-sub2 {
   display: none;
@@ -150,40 +149,73 @@
   margin-right: 5px;
   color:#5879e4;
 }
+
 .main-nav__item-sub-title {
   display: inline-block;
+}
+.main-nav__item-sub2-title {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
 }
 #submenu-scooter {
   width: 250px;
   padding: 20px 35px;
 }
+
+/*----------------------------------------------------*/
 @media (min-width: 768px) {
 .header {
   width: 1300px;
 }
-
-.header__title, .main-nav__toggle {
+.main-nav__list-sub {
+  position: absolute;
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 42px;
+  left: -35px;
+}
+.header__title, .main-nav__toggle, #arrow-bike, #arrow-baby-bike, #arrow-teen-bike, #arrow-scooter, .main-nav__list-sub {
   display: none;
 }
+
 .main-nav__inner {
   display: block;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
   background-color: #718de8;
 }
 .main-nav__list {
-  width: 1170px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 .main-nav__item {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
+  border: none;
+}
+.main-nav__list-title {
+  margin: 0;
+  color: #fff;
 }
 
+.main-nav__item-sub {
+  width: 260px;
 
-
-
-
+}
+.main-nav__item-sub:last-child {
+  margin-right: 110px;
+}
+.main-nav__list-sub2 {
+  border-top: 1px solid #ccc;
+}
+.main-nav__item-sub2-title {
+  font-size: 12px;
+}
 
 }

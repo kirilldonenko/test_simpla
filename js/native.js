@@ -1,3 +1,5 @@
+/*------------Mobile-----------------*/
+
 /* Показ и скрытие меню */
 
 $( "#toggle" ).click(function() {
@@ -22,4 +24,38 @@ $( "#arrow-baby-bike" ).click(function() {
 /* Показ и скрытие подменю "Самокаты" */
   $( "#arrow-scooter" ).click(function() {
     $( "#submenu-scooter" ).slideToggle();
+});
+
+/*---------------Desktop----------------------*/
+
+/* Показ и скрытие подменю "Велосипеды" */
+$( "#title-bike" ).mouseenter(function() {
+    $("#menu-bike").fadeIn("slow");
+});
+$( "#title-bike" ).mouseleave(function() {
+    $("#menu-bike").fadeOut("slow");
+});
+
+/* Показ и скрытие подменю "Детские велосипеды" */
+$( "#title-baby-bike" ).mouseenter(function() {
+    $("#submenu-bike").fadeIn("slow");
+});
+$( "#title-baby-bike" ).mouseleave(function() {
+    $("#submenu-bike").fadeOut("slow");
+});
+
+/* Показ и скрытие подменю "Подростковые велосипеды" */
+$( "#title-teen-bike" ).mouseenter(function() {
+    $("#submenu-teen-bike").fadeIn("slow");
+});
+$( "#title-teen-bike" ).mouseleave(function() {
+    $("#submenu-teen-bike").fadeOut("slow");
+});
+
+/* Показ и скрытие подменю "Самокаты" */
+$( "#title-scooter" ).mouseenter(function() {
+    $("#submenu-scooter").fadeIn("slow");
+});
+$( "#title-scooter" ).mouseleave(function() {
+    $("#submenu-scooter").fadeOut("slow");
 });
