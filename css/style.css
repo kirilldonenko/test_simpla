@@ -163,22 +163,13 @@
   padding: 20px 35px;
 }
 
-/*----------------------------------------------------*/
+/*-----------------------Desktop-----------------------------*/
 @media (min-width: 768px) {
 .header {
   width: 1300px;
 }
-.main-nav__list-sub {
-  position: absolute;
-  width: 1170px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  top: 42px;
-  left: -35px;
-}
-.header__title, .main-nav__toggle, #arrow-bike, #arrow-baby-bike, #arrow-teen-bike, #arrow-scooter, .main-nav__list-sub {
+
+.header__title, .main-nav__toggle, #arrow-bike, #arrow-baby-bike, #arrow-teen-bike, #arrow-scooter {
   display: none;
 }
 
@@ -199,11 +190,27 @@
   margin: 20px;
   border: none;
 }
+
 .main-nav__list-title {
   margin: 0;
   color: #fff;
 }
+.main-nav__list-sub {
+  position: absolute;
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 42px;
+  left: -35px;
+  opacity: 0;
+}
+.main-nav__item--open:hover .main-nav__list-sub--open{
 
+  opacity: 1;
+  transition: opacity 3s ease;
+}
 .main-nav__item-sub {
   width: 260px;
 
